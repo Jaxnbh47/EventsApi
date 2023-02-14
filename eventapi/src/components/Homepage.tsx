@@ -6,7 +6,7 @@ export function Homepage() {
 
     return (
         <div className="Homepage">
-            <h1>Events Finder </h1>
+            <h1>Events Finder</h1>
         </div>
 
     )
