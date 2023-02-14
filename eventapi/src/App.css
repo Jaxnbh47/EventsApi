@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Header {
+    padding: 20px;
+    background-color: lightgray;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    box-shadow: 3em black;
+}
+
+li {
+    list-style-type: none;
+    flex-direction: row;
+    display: inline-block;
+    padding: 5px;
+}
