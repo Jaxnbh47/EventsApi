@@ -9,4 +9,10 @@ export function EventDetails() {
     const [eventDate, setEventDate] = useState("");
     const [venue, setVenue] = useState("");
     const [image, setImage] = useState("");
+
+    return (
+        <div className="EventDetails">
+            
+        </div>
+    )
 }

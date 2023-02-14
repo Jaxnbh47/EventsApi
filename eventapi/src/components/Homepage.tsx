@@ -6,7 +6,8 @@ export function Homepage() {
 
     return (
         <div className="Homepage">
-            <button>Events Finder</button>
+            <h1>Events Finder</h1>
+            {/*Add form and button here*/}
         </div>
         
     )
