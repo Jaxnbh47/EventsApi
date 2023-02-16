@@ -12,7 +12,7 @@ export function EventDetails() {
 
     return (
         <div className="EventDetails">
-            
+            <h2>Event Name</h2>
         </div>
     )
 }
