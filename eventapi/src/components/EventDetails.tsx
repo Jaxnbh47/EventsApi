@@ -4,7 +4,7 @@ import { GetEvents } from "../services/EventsServices";
 export function EventDetails() {
     const [event, setEvent] = useState<GetEvents>();
     const [eventName, setEventName] = useState("");
-    const [eventUrl, seteventUrl] = useState("");
+    const [eventUrl, setEventUrl] = useState("");
     const [info, setInfo] = useState("");
     const [eventDate, setEventDate] = useState("");
     const [venue, setVenue] = useState("");
