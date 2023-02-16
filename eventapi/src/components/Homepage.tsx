@@ -3,6 +3,8 @@ import { GetEvents } from "../models/Events";
 import { Event } from "../services/EventsServices";
 import { Header } from "./Header";
 
+
+
 export function Homepage() {
     const [events, setEvents] = useState<Event[]>([])
     const [startDate, setStartDate] = useState<string>('');
@@ -22,10 +24,11 @@ export function Homepage() {
             <Header />
             <form className="form-container">
                  <label>
-                     Keyword
+                     Keyword:    
                  <input type="text" name="keyword" placeholder="Enter event name" value={keyword}
                 onChange={(e) => setKeyword(e.target.value)} />
                 </label>
+                
                 
                     <label>
                      Postal Code:
