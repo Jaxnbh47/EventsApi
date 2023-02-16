@@ -23,13 +23,13 @@ export function Homepage() {
             <form className="form-container">
                  <label>
                      Keyword
-                 <input type="text" name="keyword" value={keyword}
+                 <input type="text" name="keyword" placeholder="Enter event name" value={keyword}
                 onChange={(e) => setKeyword(e.target.value)} />
                 </label>
                 
                     <label>
                      Postal Code:
-                 <input type="text" name="postalCode"  placeholder="Zip code here" value={postalCode}
+                 <input type="text" name="postalCode"  placeholder="Enter zip code" value={postalCode}
                 onChange={(e) => setPostalCode(e.target.value.replace(/[^\d{5}]$/, "").substr(0, 5))} />
                 </label>
                   
