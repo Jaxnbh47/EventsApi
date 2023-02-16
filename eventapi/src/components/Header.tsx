@@ -1,17 +1,21 @@
+import { Nav, NavItem, NavLink } from "reactstrap";
 
 export function Header () {
-  
-
     return (
         <div className="Header">
             <h1>Events Finder</h1>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Search</li>
-                    <li>Bucket List</li>
-                </ul> 
-            </nav>
+            <Nav>
+            <NavItem>
+                <NavLink active href="#">
+                    Search
+                </NavLink>
+            </NavItem>
+            <NavItem>
+                <NavLink active href="#">
+                    Bucket List
+                </NavLink>
+            </NavItem>
+            </Nav>
         </div>
     )
 }
