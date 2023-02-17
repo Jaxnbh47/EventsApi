@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GetEvents } from "../models/Events";
+import { GetEvents } from "../services/EventsServices";
 import { Event } from "../services/EventsServices";
 import { Header } from "./Header";
 

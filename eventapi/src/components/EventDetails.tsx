@@ -1,18 +1,21 @@
-import { useState } from "react";
-import { GetEvents } from "../services/EventsServices";
+import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { GetEvents } from "../model/Events";
+import { GetEventDetails } from "../services/EventsServices";
 
 export function EventDetails() {
     const [event, setEvent] = useState<GetEvents>();
-    const [eventName, setEventName] = useState("");
     const [eventUrl, setEventUrl] = useState("");
     const [info, setInfo] = useState("");
     const [eventDate, setEventDate] = useState("");
     const [venue, setVenue] = useState("");
     const [image, setImage] = useState("");
+ 
 
     return (
         <div className="EventDetails">
-            <h2>Event Name</h2>
+            <h2 className="EventName"></h2>
+            <h3 className="venue">Venue: {venue}</h3>
         </div>
     )
 }
