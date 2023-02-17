@@ -37,16 +37,13 @@ export default function ListProvider({children}: {children: ReactNode}) {
     let[searchCriteria, setSearchCriteria] = useState<SearchCriteria[]>([])
     
 
-    function addToFaves(event: BucketList) {
-        // if (favoritesList.length == 0) {
-        //    setFavoritesList([event])
-        
-        // } else {
+    function addToBucketList(event: BucketList) {
+       
             let newList = [...bucketList];
             newList.push(event);
             setBucketList(newList);
             console.log(bucketList);
-        // }  
+
     }
 
     function remove(list?: any): void {
