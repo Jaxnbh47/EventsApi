@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { GetEvents } from "../services/EventsServices";
-import { Event } from "../services/EventsServices";
+import { GetEventDetails } from "../services/EventsServices";
+
 import { Header } from "./Header";
 
 
@@ -14,7 +14,7 @@ export function Homepage() {
 
     const onSubmit = () => {
         console.log(startDate);
-        GetEvents({startDate,endDate,postalCode,keyword}).then((events) => {
+        GetEventDetails({startDate,endDate,postalCode,keyword}).then((events) => {
             setEvents(events);
         })
     }
