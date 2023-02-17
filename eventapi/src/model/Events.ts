@@ -239,6 +239,8 @@ export interface AgeRestrictions {
 }
 
 export interface Dates {
+    endDate: ReactNode;
+    startDate: ReactNode;
     start:            Start;
     timezone?:        string;
     status:           Status;
