@@ -9,12 +9,12 @@ export function Homepage() {
     const [postalCode, setPostalCode] = useState<string>('');
     const [keyword, setKeyword] = useState<string>('');
 
-    const onSubmit = () => {
-        console.log(startDate);
-        GetEventDetails({startDate,endDate,postalCode,keyword}).then((events) => {
-            setEvents(events);
-        })
-    }
+    // const onSubmit = () => {
+    //     console.log(startDate);
+    //     GetEventDetails({startDate,endDate,postalCode,keyword}).then((events) => {
+    //         setEvents(events);
+    //     })
+    // }
 
     return (
         <div className="Homepage">
@@ -44,7 +44,7 @@ export function Homepage() {
                  <input type="date" name="endDate" value={endDate}
                 onChange={(e) => setEndDate(e.target.value)} />
                 </label>
-                    <input className="submit" type="submit" value="Submit" onClick={() => onSubmit()} />
+                    {/* <input className="submit" type="submit" value="Submit" onClick={() => onSubmit()} /> */}
             </form>
         </div>
         

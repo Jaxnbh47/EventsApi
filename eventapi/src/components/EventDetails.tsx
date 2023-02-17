@@ -12,16 +12,22 @@ export function EventDetails() {
     const [image, setImage] = useState("");
 
  
-    // useEffect(() => {
-    //     //call our api
-    //     GetEventDetails(id).then((data) => {console.log(data);});
-    // }, [setEvent]);
+    useEffect(() => {
+        GetEventDetails().then(data => setEvent(data));
+       
+      }, []);
 
+      useEffect(() => {
+        console.log(event)
+      }, [event])
 
-    return (
-        <div className="EventDetails">
-            <h2 className="EventName"></h2>
-            <h3 className="venue">Venue: {venue}</h3>
-        </div>
-    )
-}
+      function filterEvents(){
+
+      }
+
+      return (
+        <div className='Events'>
+            
+       </div> 
+      )
+    }

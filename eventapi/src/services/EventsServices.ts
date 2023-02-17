@@ -1,6 +1,7 @@
 import axios from 'axios';
+import { Event, GetEvents } from '../model/Events';
 
-export function GetEventDetails(reqData:{startDate:string,endDate:string,keyword:string,postalCode:string}) : Promise<Event[]> {
-    return axios.get<Event[]>(`https://app.ticketmaster.com/discovery/v2/events.json?apikey=MlsyU0dIeOhOWoaOEVqX3xT9QKxuvX40&keyword=${reqData.keyword}&postalCode=${reqData.postalCode}&startDateTime=${reqData.startDate}&endDateTime=${reqData.endDate}`)
+export function GetEventDetails() : Promise<GetEvents> {
+    return axios.get<GetEvents>("https://app.ticketmaster.com/discovery/v2/events.json?apikey=MlsyU0dIeOhOWoaOEVqX3xT9QKxuvX40")
     .then(response => response.data);
 }
