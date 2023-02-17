@@ -11,15 +11,15 @@ export interface EventsEmbedded {
 }
 
 export interface Event {
-    name?:             string;
-    type?:             EventType;
-    id?:               string;
-    test?:             boolean;
-    url?:              string;
-    locale?:           Locale;
-    images?:           Image[];
-    sales?:            Sales;
-    dates?:            Dates;
+    name:             string;
+    type:             EventType;
+    id:               string;
+    test:             boolean;
+    url:              string;
+    locale:           Locale;
+    images:           Image[];
+    sales:            Sales;
+    dates:            Dates;
     classifications?:  Classification[];
     promoter?:        Promoter;
     promoters?:       Promoter[];
