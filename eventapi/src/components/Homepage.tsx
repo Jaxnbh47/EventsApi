@@ -1,9 +1,6 @@
 import { useState } from "react";
 import { GetEventDetails } from "../services/EventsServices";
-
 import { Header } from "./Header";
-
-
 
 export function Homepage() {
     const [events, setEvents] = useState<Event[]>([])
@@ -32,7 +29,7 @@ export function Homepage() {
                 
                     <label>
                      Postal Code:
-                 <input type="text" name="postalCode"  placeholder="Enter zip code" value={postalCode}
+                 <input type="text" name="postalCode"  placeholder="Enter postal code" value={postalCode}
                 onChange={(e) => setPostalCode(e.target.value.replace(/[^\d{5}]$/, "").substr(0, 5))} />
                 </label>
                   
