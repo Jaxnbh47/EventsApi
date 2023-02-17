@@ -14,26 +14,26 @@ export interface Event {
     name:             string;
     type:             EventType;
     id:               string;
-    test:             boolean;
+    test?:             boolean;
     url:              string;
     locale:           Locale;
     images:           Image[];
-    sales:            Sales;
+    sales?:            Sales;
     dates:            Dates;
-    classifications:  Classification[];
+    classifications?:  Classification[];
     promoter?:        Promoter;
     promoters?:       Promoter[];
     info?:            string;
     pleaseNote?:      string;
     priceRanges?:     PriceRange[];
     products?:        Product[];
-    seatmap:          Seatmap;
+    seatmap?:          Seatmap;
     accessibility?:   Accessibility;
     ticketLimit?:     TicketLimit;
     ageRestrictions?: AgeRestrictions;
     ticketing?:       Ticketing;
-    _links:           EventLinks;
-    _embedded:        EventEmbedded;
+    _links?:           EventLinks;
+    _embedded?:        EventEmbedded;
     outlets?:         Outlet[];
 }
 
@@ -239,6 +239,8 @@ export interface AgeRestrictions {
 }
 
 export interface Dates {
+    endDate: ReactNode;
+    startDate: ReactNode;
     start:            Start;
     timezone?:        string;
     status:           Status;

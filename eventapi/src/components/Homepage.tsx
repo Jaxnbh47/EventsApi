@@ -14,7 +14,7 @@ export function Homepage() {
 
     const onSubmit = () => {
         console.log(startDate);
-        GetEvents({startDate,endDate,postalCode,keyword}).then((events) => {
+        GetEvents({startDate,endDate,postalCode,keyword}).then((events:any) => {
             setEvents(events);
         })
     }
